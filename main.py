@@ -48,8 +48,8 @@ def main():
 
 
 if __name__ == '__main__':
-    schedule.every(30).minutes.at(":30").do(main)
-
+    schedule.every().hour.at(":00").do(main)
+    schedule.every().hour.at(":30").do(main)
     while True:
         schedule.run_pending()
         time.sleep(1)
