@@ -15,7 +15,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: my-container-1
-        image: localhost:5000/examplekubernetesapplication:0.2
+        image: localhost:5000/examplekubernetesapplication:0.4
         env:
         - name: URL
           value: "https://cloudflare.com"
@@ -27,7 +27,7 @@ spec:
             cpu: "500m"
             memory: "256Mi"
       - name: my-container-2
-        image: localhost:5000/examplekubernetesapplication:0.2
+        image: localhost:5000/examplekubernetesapplication:0.4
         env:
         - name: URL
           value: "https://google.com"
@@ -39,7 +39,7 @@ spec:
             cpu: "500m"
             memory: "256Mi"
       - name: my-container-3
-        image: localhost:5000/examplekubernetesapplication:0.2
+        image: localhost:5000/examplekubernetesapplication:0.4
         env:
         - name: URL
           value: "https://bing.com"
